@@ -29,6 +29,7 @@ En aquest apartat s'explicaran els principals models que s'han provat, i els res
 
 ### Model SVM
 Per el model SVM, Observem un accuracy molt bo en el model per la classificació de lletres (sobre el 98%) i un model no tant bo per els digits el qual nomes aconsegueix un 80%.
+
 ![image](https://github.com/SergiTordera/PSIV-ANPR/assets/61145059/e458df8d-61c1-451a-85b8-90ca6a19e916)
 
 
