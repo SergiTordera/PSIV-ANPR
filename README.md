@@ -14,6 +14,7 @@ Per obrdar el reconixemnet de caracters en aquest projecte s'han utilitzat dues 
 
 ### SVM
 Per fer-ho cada caràcter es quantificara mitjançant l'extracció de característiques . Per extreure aquestes carecteristiques hem dividit la imatge de cada caràcter en regions 7x7 i sumem quans pixels pertanyen al caracter en cada regió.
+
 ![image](https://github.com/SergiTordera/PSIV-ANPR/assets/61145059/ba2e2055-023f-4f98-a13d-22b7b41a27fc)
 
 
