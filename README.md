@@ -10,7 +10,7 @@ El projecte conté els següents arxius *.py* i *.sav*:
 
 ## Reconeixement de Caràcters 
 
-Per obrdar el reconixemnet de caracters en aquest projecte s'han utilitzat dues tecniques diferents.
+Per abordar el reconixemnet de caracters en aquest projecte s'han utilitzat dues tecniques diferents.
 
 ### SVM
 Per fer-ho cada caràcter es quantificara mitjançant l'extracció de característiques . Per extreure aquestes carecteristiques hem dividit la imatge de cada caràcter en regions 7x7 i sumem quans pixels pertanyen al caracter en cada regió.
