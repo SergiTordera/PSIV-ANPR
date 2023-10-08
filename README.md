@@ -23,3 +23,24 @@ Un cop tenim el vector de característiques associat amb cada caràcter, passare
 
 ### OCR
 
+## Anàlisis i Resultats
+
+En aquest apartat s'explicaran els principals models que s'han provat, i els resultats obtinguts sobre aquests.
+
+### Model SVM
+Per el model SVM, Observem un accuracy molt bo en el model per la classificació de lletres (sobre el 98%) i un model no tant bo per els digits el qual nomes aconsegueix un 80%.
+![image](https://github.com/SergiTordera/PSIV-ANPR/assets/61145059/e458df8d-61c1-451a-85b8-90ca6a19e916)
+
+
+Si observem les consequents matriu de confusió respecte els models de lletres i digits, es veu molt clarament com les lletres tenen precisions molt elevades i són fàcilment classificables, en canvi,el model de digits es més conflictius, ja que es confonen els digits entre ells, principalment els problemes venen dels digits 5 i 6, per tant, no es classifiquen correctament. Això es podria deure a la gran semblança entre els digits mencionats els quals mantenen uns patrons de carecteristiques semblants.
+
+#### Matriu de confusió model lletres
+![image](https://github.com/SergiTordera/PSIV-ANPR/assets/61145059/4d3ef771-9020-4dd8-b7fc-be6b3dc5da54)
+#### Matriu de confusió model digits
+![image](https://github.com/SergiTordera/PSIV-ANPR/assets/61145059/923e6722-1b7c-482b-baae-8e45c5d1b36e)
+
+Per aquesta raó s'ha decidit que per el reconeixement i classificació dels digits s'utilitzaria un model OCR, el qual incrementi la nostra accuracy, i es mantendira la utilització del model SVM per el reconeixment i classificaió de lletres.
+
+### Model OCR
+
+
