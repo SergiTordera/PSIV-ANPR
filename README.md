@@ -1,13 +1,25 @@
 # PSIV-ANPR
 Aquest projecte implementa un sistema de reconeixement automàtic de matrícules (ANPR) utilitzant la llibreria d'OpenCV i sistemes de MachineLearning SVM i OCR per el reconeixament de carcaters. L'objectiu principal és detectar i segmentar matricules espanyoles i poder fer el reconeixament de caracters.
 
+![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/99728a8d-9e2c-4718-b43a-07fee2f6707b)
 ## Codi
 El projecte conté els següents arxius *.py* i *.sav*:
 1. ``matriculas_v3.py``: Conte el codi principal del projecte, al executarlo es posa en funcionament tot el sistema de reconeixement automàtic de matrícules
 2. ``models.py``: Conte les funcions necessaries per crear els models de SVM de lletres i digits.
 3. ``DatasetMatriculaEspanyola.py``: Segementa la fotografia que conte els caracters amb la font de la matricula espanyola, i les guarda en una carpeta per poder crear els models posteriorment.
 4. ``lletresv4(7).sav``: Model SVM per les lletres
+## Detecció de Matricules
+Per detectar la regio de la imatge on es troba la matricula es poden utilitzar diferents tecniques com per exemple deteccio de controns probables o extracció de carecteristiques a traves de transformacions black-hat.
 
+En un principi vam intentar reconeixer aquesta zona de la imatge a traves de la deteccio probable de contonrs (rectangles) pertenyens a la matricula, pero aquesta tecnica era molt dependent de la prespectiva i entorn de la fotografia. Per tant la vam descartar i vam decidir fer deteccions a traves de la extraccio de carecteristiques amb la tecnica black-hat i aplicant dilates i erodes en la imatge resultant.
+
+El proposit de fer dilates i erodes era crear zones compactes seperades en la imatge, d'aquesta forma aconseguiem totes les zones possibles on hi pugues haver-hi la matricula i nomes calia identificar quina d'aquestes era.
+
+Per aconseguir la zona correcta es va implementar un funció ``find_region`` que buscava contorns  rectancuglars es a dirm amb 4 costats i aspect ratio corresponent en la imatge dilatada. Aquesta implementació ha aconseguit trobar correctament totes les regions de les diferentes imatges on hi havia la matricula.
+
+| Step 1 | Step 2 | ... | Step X|
+| -------------| ------------- | -------------|------------- |
+|![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/bcf4c783-b62f-4cb4-9f6c-b8c16ce0bf81) |![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/1b424e79-c026-4b76-8189-d6a398316532)|![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/625a0e57-86bf-45b6-b471-7d6fffea7610)| ![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/89f3ab0f-c652-4472-b6af-79d388eb5a61)|
 ## Reconeixement de Caràcters 
 
 Per abordar el reconixemnet de caracters en aquest projecte s'han utilitzat dues tecniques diferents.
