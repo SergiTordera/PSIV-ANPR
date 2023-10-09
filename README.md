@@ -4,10 +4,10 @@ Aquest projecte implementa un sistema de reconeixement automàtic de matrícules
 ![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/99728a8d-9e2c-4718-b43a-07fee2f6707b)
 ## Codi
 El projecte conté els següents arxius *.py* i *.sav*:
-1. ''matriculas_v3.py'': Conté el codi principal del projecte, a l'executarlo es posa en funcionament tot el sistema de reconeixement automàtic de matrícules
-2. ''models.py'': Conte les funcions necessàries per crear els models de SVM de lletres i dígits.
-3. ''DatasetMatriculaEspanyola.py'': Segmenta la fotografia que conté els caràcters amb la font de la matrícula espanyola, i les guarda en una carpeta per poder crear els models posteriorment.
-4. ''lletresv4(7).sav'': Model SVM per les lletres
+1. ``matriculas_v3.py``: Conté el codi principal del projecte, a l'executarlo es posa en funcionament tot el sistema de reconeixement automàtic de matrícules
+2. ``models.py``: Conte les funcions necessàries per crear els models de SVM de lletres i dígits.
+3. ``DatasetMatriculaEspanyola.py``: Segmenta la fotografia que conté els caràcters amb la font de la matrícula espanyola, i les guarda en una carpeta per poder crear els models posteriorment.
+4. ``lletresv4(7).sav``: Model SVM per les lletres
 ## Detecció de Matricules
 Per detectar la regió de la imatge on es troba la matrícula es poden utilitzar diferents tècniques com per exemple detecció de contorns probables o extracció de característiques a través de transformacions black-hat.
 
@@ -15,7 +15,7 @@ En un principi vam intentar reconèixer aquesta zona de la imatge a través de l
 
 El propòsit de fer dilates i erodes era crear zones compactes separades en la imatge, d'aquesta forma aconseguíem totes les zones possibles on hi pogués haver-hi la matricula i només calia identificar quina d'aquestes era.
 
-Per aconseguir la zona correcta es va implementar una funció ''find_region'' que buscava contorns rectangulars és a dir amb 4 costats i aspect ratio corresponent en la imatge dilatada. Aquesta implementació ha assolit trobar correctament totes les regions de les diferents imatges on hi havia la matrícula.
+Per aconseguir la zona correcta es va implementar una funció ``find_region`` que buscava contorns rectangulars és a dir amb 4 costats i aspect ratio corresponent en la imatge dilatada. Aquesta implementació ha assolit trobar correctament totes les regions de les diferents imatges on hi havia la matrícula.
 
 | Step 1 | Step 2 | ... | Step X|
 | -------------| ------------- | -------------|------------- |
