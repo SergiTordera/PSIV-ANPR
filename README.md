@@ -67,6 +67,14 @@ Si observem les conseqüents matriu de confusió respecte els models de lletres 
 Per aquesta raó s'ha decidit que per al reconeixement i classificació dels dígits s'utilitzaria un model OCR, el qual incrementi la nostra accuracy, i es mantendrà la utilització del model SVM per al reconeixement i classificació de lletres.
 
 ### Model OCR
+Pel que fa la detecció amb el OCR, s'han aconseguit els següents resultats:
+En el cas de la detecció de lletras, el resultat es pitjor que amb el SVM.
+![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-CM-L.png)
+
+
+Per altre banda, amb el números, el resultat millora:
+![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-CM-N.png)
+
 
 
 ## Contributors
