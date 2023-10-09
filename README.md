@@ -78,6 +78,8 @@ Per altre banda, amb el números, el resultat millora:
 ![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-DM-N.png)
 
 
+En definitiva, es pot apreciar com el resultat amb el métode OCR dona millors resultats pels números, i com pel cas de les lletres, el SVM es molt més acurat.
+
 
 ## Contributors
 * Sergi Tordera - 1608676@uab.cat
