@@ -25,7 +25,9 @@ Per aconseguir la zona correcta es va implementar un funció ``find_region`` que
 
 La segmentació de caràcters parteix de la imatge de la matricula amb vora afegida per casos en que els nombres o lletres quedessin massa enganxats. A partir d’aquest punt es binaritza la matricula i es realitza una operació ``findContours`` per trobar tots els possibles contorns on es troben els nombres i lletres.
 A continuació, amb una sèrie de condicions es fa un primer filtratge per treure contorns que sabem que no seran caràcters de la matricula. Es calcula el rectangle que conté cada contorn y apliquem el filtratge amb les condicions: un mínim i un màxim de la mida de l’àrea, amplada del rectangle menor a l’alçada i que els rectangles no es trobin massa a la vora de la imatge.
+
 Una vegada es recullen aquests rectangles candidats, es treu també els rectangles que es troben dins d’un altre (com poden ser els casos de la lletra D, B, ... que tenen els contorns interiors i exterior). 
+
 Finalment, s’agafen els 7 rectangles més grans dels que queden tenint en comte de treure el rectangle que pertany al distintiu europeu.
 
 ![image](https://github.com/SergiTordera/PSIV-ANPR/assets/61145059/8c74e3c3-38af-42c6-853b-50aedca7956e)
