@@ -69,3 +69,11 @@ Per aquesta raó s'ha decidit que per al reconeixement i classificació dels dí
 ### Model OCR
 
 
+## Contributors
+* Sergi Tordera - 1608676@uab.cat
+* Eric Alcaraz - 1603504@uab.cat                
+* Raul Dalgamoni - 1599225@uab.cat
+
+PSIV-Grau de __Data Engineering__, 
+UAB, 2023
+
