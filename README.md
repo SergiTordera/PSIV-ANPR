@@ -69,11 +69,13 @@ Per aquesta raó s'ha decidit que per al reconeixement i classificació dels dí
 ### Model OCR
 Pel que fa la detecció amb el OCR, s'han aconseguit els següents resultats:
 En el cas de la detecció de lletras, el resultat es pitjor que amb el SVM.
+### Matriu de confusió per les lletres
 ![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-CM-L.png)
 
 
 Per altre banda, amb el números, el resultat millora:
-![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-CM-N.png)
+### Matriu de confusió pels números
+![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-DM-N.png)
 
 
 
