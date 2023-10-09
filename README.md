@@ -70,12 +70,15 @@ Per aquesta raó s'ha decidit que per al reconeixement i classificació dels dí
 Pel que fa la detecció amb el OCR, s'han aconseguit els següents resultats:
 En el cas de la detecció de lletras, el resultat es pitjor que amb el SVM.
 ### Matriu de confusió per les lletres
-![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-CM-L.png)
+
+![image](https://github.com/SergiTordera/PSIV-ANPR/assets/88167948/6b15da06-8b7d-4bde-9640-eda189b3e088)
+
 
 
 Per altre banda, amb el números, el resultat millora:
 ### Matriu de confusió pels números
-![image](https://github.com/SergiTordera/PSIV-ANPR/blob/main/OCR-DM-N.png)
+![image](https://github.com/SergiTordera/PSIV-ANPR/assets/88167948/962bd36b-834b-411b-863c-9bcf63b29736)
+
 
 
 En definitiva, es pot apreciar com el resultat amb el métode OCR dona millors resultats pels números, i com pel cas de les lletres, el SVM es molt més acurat.
