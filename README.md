@@ -20,6 +20,17 @@ Per aconseguir la zona correcta es va implementar un funció ``find_region`` que
 | Step 1 | Step 2 | ... | Step X|
 | -------------| ------------- | -------------|------------- |
 |![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/bcf4c783-b62f-4cb4-9f6c-b8c16ce0bf81) |![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/1b424e79-c026-4b76-8189-d6a398316532)|![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/625a0e57-86bf-45b6-b471-7d6fffea7610)| ![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/89f3ab0f-c652-4472-b6af-79d388eb5a61)|
+
+## Segmentació de Caràcters
+
+La segmentació de caràcters parteix de la imatge de la matricula amb vora afegida per casos en que els nombres o lletres quedessin massa enganxats. A partir d’aquest punt es binaritza la matricula i es realitza una operació ``findContours`` per trobar tots els possibles contorns on es troben els nombres i lletres.
+A continuació, amb una sèrie de condicions es fa un primer filtratge per treure contorns que sabem que no seran caràcters de la matricula. Es calcula el rectangle que conté cada contorn y apliquem el filtratge amb les condicions: un mínim i un màxim de la mida de l’àrea, amplada del rectangle menor a l’alçada i que els rectangles no es trobin massa a la vora de la imatge.
+Una vegada es recullen aquests rectangles candidats, es treu també els rectangles que es troben dins d’un altre (com poden ser els casos de la lletra D, B, ... que tenen els contorns interiors i exterior). 
+Finalment, s’agafen els 7 rectangles més grans dels que queden tenint en comte de treure el rectangle que pertany al distintiu europeu.
+
+![image](https://github.com/SergiTordera/PSIV-ANPR/assets/61145059/8c74e3c3-38af-42c6-853b-50aedca7956e)
+
+
 ## Reconeixement de Caràcters 
 
 Per abordar el reconixemnet de caracters en aquest projecte s'han utilitzat dues tecniques diferents.
