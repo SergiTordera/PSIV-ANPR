@@ -4,7 +4,7 @@ Aquest projecte implementa un sistema de reconeixement automàtic de matrícules
 ![image](https://github.com/DCC-UAB/xnap-project-ed_group_16/assets/61145059/99728a8d-9e2c-4718-b43a-07fee2f6707b)
 ## Codi
 El projecte conté els següents arxius *.py* i *.sav*:
-1. ``matriculas_v3.py``: Conté el codi principal del projecte, a l'executarlo es posa en funcionament tot el sistema de reconeixement automàtic de matrícules
+1. ``matriculas_v3_OCR.py i matriculas_v3_svm.py``: Conté el codi principal del projecte, a l'executarlo es posa en funcionament tot el sistema de reconeixement automàtic de matrícules, ja sigui amb OCR o svm.
 2. ``models.py``: Conte les funcions necessàries per crear els models de SVM de lletres i dígits.
 3. ``DatasetMatriculaEspanyola.py``: Segmenta la fotografia que conté els caràcters amb la font de la matrícula espanyola, i les guarda en una carpeta per poder crear els models posteriorment.
 4. ``lletresv4(7).sav``: Model SVM per les lletres
